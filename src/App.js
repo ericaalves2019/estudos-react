@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Botao } from './componentes/Botao';
+import { Campotexto } from './componentes/Campotexto';
+import { Tabela } from './componentes/Tabela';
+import {Saldo} from './componentes/Saldo'
+import {Lis} from './componentes/Lis'
+import {Bemvindo} from './componentes/Bemvindo'
+import {Botaovoltar} from './componentes/Botaovoltar'
 
 function App() {
+  const funcao = () => {
+    alert('fui clicado');
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    
+    <Bemvindo></Bemvindo>
+    <Saldo></Saldo>
+    <Lis></Lis>
+    <Campotexto></Campotexto>
+    <Botao></Botao>
+    <Tabela></Tabela>
+    <Botaovoltar></Botaovoltar>
+     
+   </div>
   );
 }
 
